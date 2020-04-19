@@ -1,0 +1,6 @@
+MAILTO=ubuntu
+
+# Full path is necessary for all files
+00 14 * * * ~/.virtualenvs/stocks/bin/python3 /home/ubuntu/QuantWork/fetch_data.py --ticker-list-file /home/ubuntu/QuantWork/sp500.json --bucket open
+45 16 * * * ~/.virtualenvs/stocks/bin/python3 /home/ubuntu/QuantWork/fetch_data.py --ticker-list-file /home/ubuntu/QuantWork/sp500.json --bucket mid
+30 19 * * * ~/.virtualenvs/stocks/bin/python3 /home/ubuntu/QuantWork/fetch_data.py --ticker-list-file /home/ubuntu/QuantWork/sp500.json --bucket close
